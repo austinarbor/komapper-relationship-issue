@@ -1,0 +1,19 @@
+[versions]
+assertj = "3.26.0"
+junit = "5.10.3"
+komapper = "1.18.1"
+kotlin = "2.0.0"
+ksp = "2.0.0-1.0.22"
+springBoot = "3.3.1"
+
+[libraries]
+assertj = { group = "org.assertj", name = "assertj-core", version.ref = "assertj" }
+junit-jupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junit" }
+komapper-platform = { group = "org.komapper", name = "komapper-platform", version.ref = "komapper" }
+spring-springBootDependencies = { group = "org.springframework.boot", name = "spring-boot-dependencies", version.ref = "springBoot" }
+
+[plugins]
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+springBoot = { id = "org.springframework.boot", version.ref = "springBoot" }
